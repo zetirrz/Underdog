@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Encabezado */
+.header {
+    background-color: #a0bcf0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding: 10px 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+}
+
+.menu .navbar ul {
+    display: flex;
+    text-align: center;
+}
+
+.menu .navbar ul li {
+    margin: 0 15px;
+    text-align: center;
+}
+
+.menu .navbar ul li a:hover {
+    color: #007BFF;
+}
+
+.menu-icono {
+    display: none;
+}
+
+.menu .container {
+    display: flex;                  /* Utiliza Flexbox para una disposición flexible */
+    justify-content: space-between; /* Coloca los elementos a ambos lados (logo y menú) */
+    align-items: center;            /* Centra verticalmente los elementos */
+    padding: 10px 20px;             /* Añade un poco de espacio alrededor del contenido */
+    background-color: #333;         /* Cambia el color de fondo */
+    color: white;                   /* Cambia el color del texto */
+}
+
+.menu .container .logo {
+    font-size: 24px;                /* Tamaño de fuente del logo */
+    font-weight: bold;              /* Pone el logo en negrita */
+}
+
+.menu .container .navbar {
+    display: flex;                  /* Flexbox para los elementos del menú */
+}
+
+.menu .container .navbar ul {
+    list-style: none;               /* Elimina los puntos de las listas */
+    display: flex;                  /* Hace que los elementos de la lista estén en fila */
+    margin: 0;
+}
+
+.menu .container .navbar ul li {
+    margin-right: 20px;             /* Espaciado entre los elementos del menú */
+}
+
+.menu .container .navbar ul li a {
+    text-decoration: none;          /* Elimina el subrayado de los enlaces */
+    color: white;                   /* Color de los enlaces */
+    font-size: 18px;                /* Tamaño de la fuente */
+    transition: color 0.3s ease;    /* Efecto de transición para el color */
+}
+
+.menu .container .navbar ul li a:hover {
+    color: #f0f0f0;                 /* Cambia el color cuando pasas el ratón por encima */
+}
+
+.menu .container .menu-icono {
+    display: none;                  /* Esconde el icono de menú en pantallas grandes */
+}
+
+@media (max-width: 768px) {
+    .menu .container .menu-icono {
+        display: block;             /* Muestra el icono de menú en pantallas pequeñas */
+    }
+
+    .menu .container .navbar {
+        display: none;              /* Esconde el menú en pantallas pequeñas */
+        flex-direction: column;     /* Coloca los elementos del menú en columna */
+        width: 100%;                /* Hace que ocupe todo el ancho */
+        background-color: #333;     /* Fondo oscuro */
+        position: absolute;         /* Coloca el menú encima de otros contenidos */
+        top: 60px;                  /* Mueve el menú justo debajo del encabezado */
+        left: 0;
+    }
+
+    .menu .container #menu:checked + .navbar {
+        display: flex;              /* Muestra el menú cuando se marca el checkbox */
+    }
+}
+
+/* Sección Principal */
+.header-content {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn-1, .btn-2 {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #111111;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-1:hover, .btn-2:hover {
+    background-color: #0056b3;
+}
+
+/* Ofertas */
+.ofertcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.offer img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.offer-3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Productos */
+.products {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.product {
+    margin: 20px auto;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.product img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    font-size: 1.5rem;
+}
+
+.precio {
+    font-weight: bold;
+    color: #007BFF;
+    margin: 10px 0;
+}
+
+.blog-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-1 img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.blog-1 h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.blog-1 p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: #007BFF;
+    text-decoration: overline;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #4E4B5076;
+    padding: 20px;
+    min-width: 400px;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    color: #f5f5f5;
+}
+
+.borrar {
+    background-color: #111111;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #ffff;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    padding: 0 200px;
+}
+
+.header-img {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.header-txt {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.header-txt h1 {
+    font-size: 90px;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #111111;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 15px;
+}
+
+.header-txt p {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: #111111;
+    color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.ofert {
+    padding: 20px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ofert-1 {
+    display: flex;
+    align-items: center;
+    flex-basis: calc(13.3% - 800px);
+    background-color: #ddd;
+    padding: 50px;
+}
+
+.ofert-img {
+    flex: 50%;
+    margin-right: 5px;
+}
+
+.ofert-img img {
+    width: 250px;
+}
+
+.ofert-txt {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.ofert-txt h3 {
+    color: #111111;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 7px 10px;
+    background-color: #111111;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.blog {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.blog-1 {
+    flex-basis: calc(33.3% - 30px);
+}
+
+.blog-1 h3 {
+    font-size: 20px;
+    color: #111111;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3 {
+    font-size: 18px;
+    color: #f5f5f5;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 991px) {
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #181818;
+        display: none;
+    }
+
+    .menu.navbar ul li {
+        width: 100%;
+    }
+
+    .menu ul li a {
+        color: #fff;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .logo {
+        display: none;
+    }
+}

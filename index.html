@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content ="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnderDog</title>
+    <link rel ="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="header">
+        
+<div class="menu container ">
+    <a href="#" class="logo">UnderDog</a>
+    <input type="checkbox" id = "menu"/>
+    <label for ="menu">
+        <img src="Fotos/menu.png" class="menu-icono" alt="menu">
+
+    </label>
+    <nav class ="navbar">
+        <ul>
+            <li><a href ="#" >Inicio</a></li>
+            <li><a href ="#" >Producto</a></li>
+            <li><a href ="#" >Redes</a></li>
+            <ul>
+
+                <nav>
+                    <div>
+                        <ul>
+                            <li class="submenu">
+                                <img src="Fotos/car.svg" id="img-carrito" alt="carrito">
+                                <div id="carrito">
+                                    <table id="lista-carrito">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                    <a href="#" id="vaciar-carrito" class="btn-2">Comprar</a>
+                                    <script>
+                                        // Selecciona el botón "Comprar" por su ID
+                                        const botonComprar = document.getElementById('vaciar-carrito');
+                                    
+                                        // Añade un evento al botón
+                                        botonComprar.addEventListener('click', function(event) {
+                                            event.preventDefault(); // Evita que se recargue la página
+                                            alert('¡Felicidades por tu compra!');
+                                        });
+                                    </script>
+                                    
+                                </div>
+                            </li>
+                                                    </ul>
+                    </div>
+</div>
+
+
+<header class="header-content">
+    <div class="header-img">
+        <img src="Fotos/698a8cd65b7a63692422f654e0fe71d6.jpg" alt="">
+        <h1>Ofertas especiales</h1>
+        <p>Estrena las mejores prendas</p>
+        <a href="#" class="btn-1"></a>
+    </div>
+</header>
+
+<section class="ofertcontainer">
+    <div class="ofert-1">
+        <div class="ofer-img">
+            <img src="Fotos/IMG-20240915-WA0004.jpg" alt="">
+        </div>
+        <div class="ofert-txt">
+            <h3>Conjunto de pans varonil</h3>
+            <a href="#" class="btn-2"></a>
+        </div>
+    </div>
+
+    <div class="ofert-1">
+        <div class="ofer-img">
+            <img src="Fotos/IMG-20240915-WA0003.jpg" alt="">
+        </div>
+        <div class="ofert-txt">
+            <h3>Short deportivo femenino</h3>
+            <a href="#" class="btn-2"></a>
+        </div>
+    </div>
+
+    <div class="ofert-1">
+        <div class="ofer-img">
+            <img src="Fotos/IMG-20240915-WA0009.jpg" alt="">
+        </div>
+        <div class="ofert-txt">
+            <h3>Playera unisex</h3>
+            <a href="#" class="btn-2"></a>
+        </div>
+    </div>
+
+    <div class="ofert-1">
+        <div class="ofer-img">
+            <img src="Fotos/hombreplatera.png" alt="">
+        </div>
+        <div class="ofert-txt">
+            <h3>Conjunto de pans varonil</h3>
+            <a href="#" class="btn-2"></a>
+        </div>
+    </div>
+</section>
+
+
+    </section>
+
+    <main class = "products" id="Hombres ">
+        <h2>Hombres</h2>
+        <div class="products-content">
+            <div class="product">
+                <img src="Fotos/IMG-20240915-WA0005.jpg" alt="">
+                
+<div  class="product-txt">
+    <h3>Atletics</h3>
+    <p>Conjunto de 3 playeras deportivas  </p>
+<p class="Precio"> 300</p>
+<a href="#" class=" agregar-carrito btn-2" data-id ="1">agregar-carrito</a>    
+</div>
+            </div>
+            <div class="products-content">
+                <div class="product">
+                    <img src="Fotos/shortstos.png" alt="">
+    <div  class="product-txt">
+        <h3>Shorts</h3>
+        <p>Conjunto de 5 Short con licra   </p>
+    <p class="Precio"> 450</p>
+    <a href="#" class=" agregar-carrito btn-2" data-id ="2">agregar-carrito</a>    
+    </div>
+                </div>
+
+                <div class="products-content">
+                    <div class="product">
+                        <img src="Fotos/popo2.png" alt="">
+        <div  class="product-txt">
+            <h3>Pits</h3>
+            <p>Conjunto de short y playera  </p>
+        <p class="Precio"> 250</p>
+        <a href="#" class=" agregar-carrito btn-2" data-id ="3">agregar-carrito</a>    
+        </div>
+                    </div>
+                    <div class="products-content">
+                        <div class="product">
+                            <img src="Fotos/xdxd.png" alt="">
+            <div  class="product-txt">
+                <h3>Darling</h3>
+                <p>Conjunto de de pans y sudadera </p>
+            <p class="Precio"> 340</p>
+            <a href="#" class=" agregar-carrito btn-2" data-id ="4">agregar-carrito</a>    
+            </div>
+                        </div>
+                        <div class="products-content">
+                            <div class="product">
+                                <img src="Fotos/omg}.png" alt="">
+                <div  class="product-txt">
+                    <h3>Panter</h3>
+                    <p>Camiseta sin mangas olgada   </p>
+                <p class="Precio"> 170</p>
+                <a href="#" class=" agregar-carrito btn-2" data-id ="5">agregar-carrito</a>    
+                </div>
+                            </div>
+                            <div class="products-content">
+                                <div class="product">
+                                    <img src="Fotos/pantous.png" alt="">
+                    <div  class="product-txt">
+                        <h3>Pants</h3>
+                        <p>Conjunto de 3 pants ajustables deportivas  </p>
+                    <p class="Precio"> 280</p>
+                    <a href="#" class=" agregar-carrito btn-2" data-id ="6">agregar-carrito</a>    
+                    </div>
+                                </div>
+                                <div class="products-content">
+                                    <div class="product">
+                                        <img src="Fotos/15cd9c94287c11fa19ea7c38ca31c8cb.jpg" alt="">
+                        <div  class="product-txt">
+                            <h3>obsidiana</h3>
+                            <p>Short Licra unitalla </p>
+                        <p class="Precio"> 170</p>
+                        <a href="#" class=" agregar-carrito btn-2" data-id ="7">agregar-carrito</a>    
+                        </div>
+                                    </div>
+                                    <div class="products-content">
+                                        <div class="product">
+                                            <img src="Fotos/9890f85819ddab9d4b8247af02a76ed2.jpg" alt="">
+                            <div  class="product-txt">
+                                <h3>Old school </h3>
+                                <p>Playera oversize  </p>
+                            <p class="Precio"> 160</p>
+                            <a href="#" class=" agregar-carrito btn-2" data-id ="8">agregar-carrito</a>    
+                            </div>
+                                        </div>
+                                        <div class="products-content">
+                                            <div class="product">
+                                                <img src="Fotos/df97a87fdba398bdb9e8f6017b216153.jpg" alt="">
+                                <div  class="product-txt">
+                                    <h3>Vintage</h3>
+                                    <p>Conjunto de short licra y playera vintage  </p>
+                                <p class="Precio"> 400</p>
+                                <a href="#" class=" agregar-carrito btn-2" data-id ="9">agregar-carrito</a>    
+                                </div>
+                                            </div>
+        </div>
+                                    <div class= "products" id="mujeres ">
+            <h2>Mujer</h2>
+            <div class="products-content">
+                <div class="product">
+                    <img src="Fotos/75dc6f19a578f35887f49d45c54fd4d7.jpg" alt="">
+                    
+    <div  class="product-txt">
+        <h3>Atletics</h3>
+        <p>Pans vintage olgado  </p>
+    <p class="Precio"> 200</p>
+    <a href="#" class=" agregar-carrito btn-2" data-id ="10">agregar-carrito</a>    
+    </div>
+                </div>
+                <div class="products-content">
+                    <div class="product">
+                        <img src="Fotos/9ce22c8e9d2c7782566d49bd774ca3b6.jpg" alt="">
+        <div  class="product-txt">
+            <h3>Licra</h3>
+            <p>Conjunto de blusa y pans licra   </p>
+        <p class="Precio"> 160</p>
+        <a href="#" class=" agregar-carrito btn-2" data-id ="11">agregar-carrito</a>    
+        </div>
+                    </div>
+    
+                    <div class="products-content">
+                        <div class="product">
+                            <img src="Fotos/IMG-20240915-WA0008.jpg" alt="">
+            <div  class="product-txt">
+                <h3>Tops</h3>
+                <p>Par de tops  de espalda abierta </p>
+            <p class="Precio"> 250</p>
+            <a href="#" class=" agregar-carrito btn-2" data-id ="12">agregar-carrito</a>    
+            </div>
+                        </div>
+                        <div class="products-content">
+                            <div class="product">
+                                <img src="Fotos/shortsirou.png" alt="">
+                <div  class="product-txt">
+                    <h3>Short</h3>
+                    <p>Par de shorts de algodon </p>
+                <p class="Precio"> 150</p>
+                <a href="#" class=" agregar-carrito btn-2" data-id ="13">agregar-carrito</a>    
+                </div>
+                            </div>
+                            <div class="products-content">
+                                <div class="product">
+                                    <img src="Fotos/f266265ab839157d40163436a4f8e1bb.jpg" alt="">
+                    <div  class="product-txt">
+                        <h3><Body></Body></h3>
+                        <p>Traje completo de algodon</p>
+                    <p class="Precio"> 170</p>
+                    <a href="#" class=" agregar-carrito btn-2" data-id ="14">agregar-carrito</a>    
+                    </div>
+                                </div>
+                                <div class="products-content">
+                                    <div class="product">
+                                        <img src="Fotos/53b73fccc83cb73971fe80a469258d71.jpg" alt="">
+                        <div  class="product-txt">
+                            <h3>Joger</h3>
+                            <p>Joger holgado  con tobillo ajustable </p>
+                        <p class="Precio"> 280</p>
+                        <a href="#" class=" agregar-carrito btn-2" data-id ="15">agregar-carrito</a>    
+                        </div>
+                                    </div>
+                                    <div class="products-content">
+                                        <div class="product">
+                                            <img src="Fotos/pantisss.png" alt="">
+                            <div  class="product-txt">
+                                <h3>Luna</h3>
+                                <p>Pants holgado con tobillo ajustable</p>
+                            <p class="Precio"> 100</p>
+                            <a href="#" class=" agregar-carrito btn-2" data-id ="16">agregar-carrito</a>    
+                            </div>
+                                        </div>
+    
+                                        <div class="products-content">
+                                            <div class="product">
+                                                <img src="Fotos/53d5977520aa65a80a48a123dbc9b715.jpg" alt="">
+                                <div  class="product-txt">
+                                    <h3>Luna</h3>
+                                    <p>Conjunto  ajustable de licra</Canvas></p>
+                                <p class="Precio"> 130</p>
+                                <a href="#" class=" agregar-carrito btn-2" data-id ="17">agregar-carrito</a>    
+                                </div>
+                                            </div>
+                                            <div class="products-content">
+                                                <div class="product">
+                                                    <img src="Fotos/IMG-20240915-WA0006.jpg" alt="">
+                                    <div  class="product-txt">
+                                        <h3>Luna</h3>
+                                        <p> top  casual de algodon/p>
+                                    <p class="Precio"> 100</p>
+                                    <a href="#" class=" agregar-carrito btn-2" data-id ="16">agregar-carrito</a>    
+                                    </div>
+                                                </div>
+            
+        
+        
+    
+    </main>
+
+    <section class="icons container">
+        <div class="icon-1">
+            <div class = "icons.img">
+                <img src="Fotos/i1.svg" alt="">
+            </div>
+                <div class="icon-txt">
+                    <h3>
+                        comodidad y estilo en cualquier lugar 
+                    </h3>
+                    
+                </div>
+            </div>
+    </section>
+    <Div class="blog-1">
+        <img src="Fotos/IMG-20241005-WA0118.jpg" alt="">
+<h3>
+    UnderDog
+</h3>
+<p>
+    ¿Qué es Underdog? Nosotros somos una marca de ropa que 
+    busca la comidad y el estilo en cada prenda para 
+    nuestros clientes pero a un precio accesible para 
+    cualquier persona.
+</p>
+    </Div>
+<section>
+    <footer class=" footer">
+        <div class="link">
+            <h3>Contáctanos</h3>
+            <ul>
+                <li>
+                    <a href="mailto:zetinaplay@gmail.com?subject=Consulta&body=Hola, me gustaría saber más sobre...">
+                        📧 Email: zetinaplay@gmail.com
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/tony_hats2?igsh=MWdsem13ZGVldm94eQ==" target="_blank">
+                        📸 Instagram: @tony_hats2
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+    </footer>
+</section>
+
+
+    <script src ="scrip.js"></script>
+</body>
+</html>
